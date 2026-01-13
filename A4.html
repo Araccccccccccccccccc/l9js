@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id="num"></P>
+    <button onclick="fun1()"> Ascending</button>
+    <button onclick="fun2()"> Descending</button>
+    <p id="res"></p>
+    <script>
+        var num =[10,20,40,80,90,95]
+        document.getElementById("num").innerHTML=numbers;
+        function fun1(){
+            num.sort(function(a,b){return a-b});
+            document.getElementById("res").innerHTML=num;
+        }
+        function fun2(){
+            num.sort(function(a,b){return b-a});
+            document.getElementById("res").innerHTML=num;
+        }
+    </script>
+</body>
+</html>
